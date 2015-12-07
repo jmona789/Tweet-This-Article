@@ -1,4 +1,7 @@
 $(document).ready(function(){
+    $("blockquote").addClass("tweetText");
+    var blockquoteLink = $("<a>").addClass("tweetThis");
+    $("blockquote").wrap(blockquoteLink);
     var tweetText = $(".tweetText").html();
     var currentUrl = window.location;
   function cutQuote(){
