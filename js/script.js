@@ -1,17 +1,19 @@
-$(document).ready(function(){
-    $("blockquote").addClass("tweetText");
-    var blockquoteLink = $("<a>").addClass("tweetThis");
-    $("blockquote").wrap(blockquoteLink);
-    var tweetText = $(".tweetText").html();
-    var currentUrl = window.location;
+$(document).ready(function(){ 
+  $("blockquote").addClass("tweetText");
+  var blockquoteLink = $("<a>").addClass("tweetThis").attr("target", "_blank");;
+  $("blockquote").wrap(blockquoteLink);
+  var tweetBtn = $("<img/>").attr("src", "images/twitter.png");
+  var tweetText = $(".tweetText").html();
+  var currentUrl = window.location;
   function cutQuote(){
-    if (tweetText.length > 102){
-      return tweetText.slice(0, 98) +'..."';
+    if (tweetText.length > 104){
+      $("blockquote").prepend(tweetBtn);
+      return tweetText.slice(0, 101) +'...';
     }
     else{
+      $("blockquote").prepend(tweetBtn);
       return tweetText;
     }
   }
-
   $(".tweetThis").attr("href", "http://twitter.com/intent/tweet?text="+cutQuote()+" "+currentUrl+"&via=NB_Today");
 });
