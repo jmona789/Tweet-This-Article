@@ -1,3 +1,11 @@
+#headline{
+  margin-bottom: 0px;
+}
+
+#byLine p{
+  font-size:12px;
+}
+
 body blockquote {
   position: relative;
   margin-left:30px;
