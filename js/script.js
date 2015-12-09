@@ -15,5 +15,5 @@ $(document).ready(function(){
       return tweetText;
     }
   }
-  $(".tweetThis").attr("href", "http://twitter.com/intent/tweet?text="+cutQuote()+" "+currentUrl+"&via=NB_Today");
+  $(".tweetThis").attr("href", "http://twitter.com/intent/tweet?text="+cutQuote()+" "+currentUrl);
 });
