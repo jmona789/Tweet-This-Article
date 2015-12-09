@@ -1,9 +1,15 @@
 #headline{
   margin-bottom: 0px;
+  margin-left: 10px;
 }
 
 #byLine p{
   font-size:12px;
+}
+
+p{
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 body blockquote {
