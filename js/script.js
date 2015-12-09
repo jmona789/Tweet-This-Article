@@ -1,6 +1,6 @@
 $(document).ready(function(){ 
   $("blockquote").addClass("tweetText");
-  var blockquoteLink = $("<a>").addClass("tweetThis").attr("target", "_blank");;
+  var blockquoteLink = $("<a>").addClass("tweetThis").attr("target", "_blank");
   $("blockquote").wrap(blockquoteLink);
   var tweetBtn = $("<img/>").attr("src", "images/twitter.png");
   var tweetText = $(".tweetText").html();
